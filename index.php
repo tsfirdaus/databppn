@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +23,7 @@
             <nav class="style-4">
                 <ul class="menu-4">
                     <li class="current"><a href="#" data-hover="Home">Home</a></li>
-                    <li><a href="#" data-hover="ormasbppn">OrmasBppn</a></li>
+                    <li><a href="ormasbppn/lihat.php" data-hover="ormasbppn">OrmasBppn</a></li>
                     <li><a href="#" data-hover="ProKer">ProKer</a></li>
                     <li><a href="contact.php" data-hover="Contact">Contact</a></li>
                     <li><a href="login/login.php" data-hover="AI"><img src="img/user.png" width='20px' alt="" srcset=""></a></li>

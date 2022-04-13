@@ -4,6 +4,6 @@ $username = "root";
 $pass = "";
 $db = "databppn";
 
-$kon = mysqli_connect($server,$username,$pass,$db);
+$conn = mysqli_connect($server,$username,$pass,$db);
 
 ?>

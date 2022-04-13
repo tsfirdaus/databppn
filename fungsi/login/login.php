@@ -1,3 +1,23 @@
+<?php 
+require '../../config.php';
+if (isset($_POST["login"])){
+
+
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    mysqli_query($kon,"SELECT * FROM user WHERE username = '$username'");
+
+
+    //cek username
+    if(mysqli_num_rows($Result) === 1){
+      //cek pass
+      $row = mysqli_fe
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

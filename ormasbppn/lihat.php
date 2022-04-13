@@ -12,6 +12,10 @@
 </head>
 <body>
     <h2>DAFTAR ORGANISASI KEMASYARAKATAN YANG TERDAFTAR DI <br> BADAN KESBANGPOL BALIKPAPAN</h2>
+    <div class="button">
+        <button><a class="tbh" href="../index.php">Kembali</a></button>
+        <button><a class="tbh" href="create.php">Tambahkan data!</a></button>
+    </div>
     <table class="table" align="center">
         <tr>
             <th>No</th>
@@ -24,7 +28,7 @@
             <th>NPWP</th>
             <th>Masa Berlaku SKM</th>
             <th>Keterangan</th>
-            <th>!</th>
+            <th>action</th>
         </tr>
         <?php 
         $no=1;
@@ -51,7 +55,7 @@
             <td class="center"><?= $tampil['ket'];?></td>
             <td> 
                 <ul>
-                    <li><a href=""></a></li>
+                    <li class="refresh"><a href=""><img  width="24px" src="../img/refresh.png" alt=""></a><br><br></li>
                     <li><a href="delete.php?id=<?= $tampil['id'];?>"><img width="24px" src="../img/delete.png" alt=""></a></li>
                 </ul>
             </td>

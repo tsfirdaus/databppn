@@ -15,24 +15,13 @@
 <body>
     <div class="head">
         <header>
-            <h1>
-            <a href="index.php"><b>DATABPPN</b></a></h1>
+            <p><b>DATABPPN</b></p>
             <nav class="style-4">
                 <ul class="menu-4">
-                    <li class="current"><a href="index.php" data-hover="Home">Home</a></li>
-                    <li><a href="ormas.php" data-hover="ormasbppn">OrmasBppn</a></li>
+                    <li><a href="index.php" data-hover="Home">Home</a></li>
+                    <li class="current"><a href="ormas.php" data-hover="ormasbppn">OrmasBppn</a></li>
                     <li><a href="proker.php" data-hover="ProKer">ProKer</a></li>
                     <li><a href="contact.php" data-hover="Contact">Contact</a></li>
                     <li><a href="fungsi/login/login.php" data-hover="AI"><img src="img/user.png" width='20px' alt="" srcset=""></a></li>
                 </ul>
             </nav>
-        </header>
-        <div id="home" class="home">
-            <p class="selamat">Selamat Datang! <br> di <b>DATABPPN</b> <br> </p>
-            <img class="banner" src="img/Frame 3 (2).png" alt="">
-        </div>
-    </div>
-</body>
-
-
-</html>

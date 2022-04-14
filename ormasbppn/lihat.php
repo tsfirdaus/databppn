@@ -3,28 +3,42 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>ormasbppn</title>
 </head>
+
 <body>
-    <h2>DAFTAR ORGANISASI KEMASYARAKATAN YANG TERDAFTAR DI <br> BADAN KESBANGPOL BALIKPAPAN</h2>
-    <div class="button">
-        <button><a class="tbh" href="../index.php">Kembali</a></button>
-        <button><a class="tbh" href="create.php">Tambahkan data!</a></button>
+    <div class="head">
+        <header>
+            <p><b>DATABPPN</b></p>
+            <nav class="style-4">
+                <ul class="menu-4">
+                    <li><a href="../index.php" data-hover="Home">Home</a></li>
+                    <li class="current"><a href="#" data-hover="Ormasbppn">Ormasbppn</a></li>
+                    <li><a href="#" data-hover="ProPer">ProPer</a></li>
+                    <li><a href="create.php" data-hover="Tambahkan">Tambahkan</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
+    <h2>DAFTAR ORGANISASI KEMASYARAKATAN YANG TERDAFTAR DI <br> BADAN KESBANGPOL BALIKPAPAN</h2>
     <table class="table" align="center">
         <tr>
             <th>No</th>
             <th>Nama Ormas dan Singkatan</th>
             <th>Sifat Kekhususan Bidang Kegiatan</th>
             <th>Nomor SK Kemenkumham / SKT Kemendagri dan SKM</th>
-            <th >Nama Pengurus</th>
+            <th>Nama Pengurus</th>
             <th>Alamat Sekretariat</th>
-            <th >Tempat Kedudukan Pengurus /No Telepon. HP</th>
+            <th>Tempat Kedudukan Pengurus /No Telepon. HP</th>
             <th>NPWP</th>
             <th>Masa Berlaku SKM</th>
             <th>Keterangan</th>
@@ -36,32 +50,37 @@
         while($tampil = mysqli_fetch_array($ambildata)):
         ?>
         <tr>
-            <td class="center"><?= $no;?></td>
-            <td class="center"><?= $tampil['nama'];?></td>
-            <td class="center"><?= $tampil['sifat'];?></td>
-            <td class="center"><?= $tampil['nosk'];?></td>
-            <td >
-                <ul >
-                    <li>Ketua: <?= $tampil['jab1']; ?> <br><br></li>
-                    <li>Wakil ketua: <?= $tampil['jab2']; ?> <br><br></li>
-                    <li>Seketaris: <?= $tampil['jab3']; ?> <br><br></li>
-                    <li>Bendahara: <?= $tampil['jab4']; ?> <br><br></li>
-                </ul>
-            </td>
-            <td class="center"> <?= $tampil['alamat']; ?></td>
-            <td class="center"><?= $tampil['tempat'];?>/<br><?= $tampil['notelp'];?></td>
-            <td class="center"><?= $tampil['npwp'];?></td>
-            <td class="center"><?= $tampil['skm'];?></td>
-            <td class="center"><?= $tampil['ket'];?></td>
-            <td> 
+            <td class="center" rowspan="4"><?= $no;?></td>
+            <td class="center" rowspan="4"><?= $tampil['nama'];?></td>
+            <td class="center" rowspan="4"><?= $tampil['sifat'];?></td>
+            <td class="center" rowspan="4"><?= $tampil['nosk'];?></td>
+            <td class="center">Ketua :<?= $tampil['jab1'];?></td>
+            <td class="center" rowspan="4"> <?= $tampil['alamat']; ?></td>
+            <td class="center" rowspan="4"><?= $tampil['tempat'];?>/<br><?= $tampil['notelp'];?></td>
+            <td class="center" rowspan="4"><?= $tampil['npwp'];?></td>
+            <td class="center" rowspan="4"><?= $tampil['skm'];?> s/d <?= $tampil['skm1'];?></td>
+            <td class="center" rowspan="4"><?= $tampil['ket'];?></td>
+            <td rowspan="4">
                 <ul>
-                    <li class="refresh"><a href=""><img  width="24px" src="../img/refresh.png" alt=""></a><br><br></li>
-                    <li><a href="delete.php?id=<?= $tampil['id'];?>"><img width="24px" src="../img/delete.png" alt=""></a></li>
+                    <li class="refresh"><a href="update.php?id=<?= $tampil['id'];?>"><img width="24px"
+                                src="../img/refresh.png" alt=""></a><br><br></li>
+                    <li><a href="delete.php?id=<?= $tampil['id'];?>"><img width="24px" src="../img/delete.png"
+                                alt=""></a></li>
                 </ul>
             </td>
+        </tr>
+        <tr>
+            <td class="center">Wakil ketua: <?= $tampil['jab2'];?></td>
+        </tr>
+        <tr>
+            <td class="center">Seketaris: <?= $tampil['jab3'];?></td>
+        </tr>
+        <tr>
+            <td class="center">Bendahara: <?= $tampil['jab4'];?></td>
         </tr>
         <?php $no++;?>
         <?php endwhile;?>
     </table>
 </body>
+
 </html>

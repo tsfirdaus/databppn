@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,36 +16,33 @@
 <body>
     <div class="head">
         <header>
+        <div class="top">
             <p><b>DATABPPN</b></p>
-            <nav class="topnav">
-                <ul class="menuk">
+            <nav class="styleaja">
+                <ul class="menuaja">
                     <li><a href="index.php" data-hover="Home">Home</a></li>
-                    <li><a href="ormas.php" data-hover="ormasbppn">OrmasBppn</a></li>
-                    <li><a href="proker.php" data-hover="ProKer">ProKer</a></li>
+                    <li><a href="ormasbppn/lihat.php" data-hover="ormasbppn">OrmasBppn</a></li>
+                    <li><a href="proker.php" data-hover="Proper">ProPer</a></li>
                     <li class="current"><a href="contact.php" data-hover="Contact">Contact</a></li>
-                    <li><a href="fungsi/login/login.php" data-hover="AI"><img src="img/user.png" width='20px' alt="" srcset=""></a></li>
                 </ul>
             </nav>
-</header>
-</div>
-<div>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-   
-    <div class="container">
+            </div>
+        </header>
+    <div class="cons">
         <div class="layanan satu">
         <h2>CONTACT</h2>
         <ul>
             <div class="siap">
-            <li><a class="medsos" href="#"><img width="60px" src="img/whatsapp.png">whatsapp</a></li>
+            <li><a class="medsos" href="#"><img width="60px" src="img/whatsapp.png"> Whatsapp</a></li>
             </div>
             <div class="siap">
-            <li><a class="medsos" href="#"><img width="60px" src="img/instagram.png">instagram</a></li>
+            <li><a class="medsos" href="#"><img width="60px" src="img/instagram.png"> Instagram</a></li>
             </div>
             <div class="siap">
-            <li><a class="medsos" href="#"><img width="60px" src="img/youtube.png">youtube</a></li>
+            <li><a class="medsos" href="#"><img width="60px" src="img/youtube.png"> Youtube</a></li>
             </div>
             <div class="siap">
-            <li><a class="medsos" href="#"><img width="60px" src="img/gps.png">alamat</a></li>
+            <li><a class="medsos" href="#"><img width="60px" src="img/gps.png"> Alamat</a></li>
             </div>
         </ul>
         </div>
@@ -73,11 +71,14 @@
 		('$Nama','$email','$telp','$komen')";
 
         //Mengeksekusi/menjalankan query diatas
-        $hasil=mysqli_query($kon,$sql);
+        $hasil=mysqli_query($conn,$sql);
 
         //Kondisi apakah berhasil atau tidak dalam mengeksekusi query diatas
         if ($hasil) {
-            header("Location:index.php");
+            echo "<script>
+            alert('Terimakasih atas sarannya!');
+            document.location.href='contact.php';
+        </script>";
         }
         else {
             echo "<div class='alert alert-danger'> gagal.</div>";
@@ -112,8 +113,3 @@
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>
     </div>
-            
-           
-        
-    </div>
-</body>

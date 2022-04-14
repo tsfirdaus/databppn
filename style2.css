@@ -1,23 +1,23 @@
-.menu-4 {
+.menuaja {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.menu-4 * {
+.menuaja * {
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
 
-.menu-4 li {
+.menuaja li {
     display: inline-block;
     list-style: outside none none;
     margin: 0 1.5em;
     overflow: hidden;
 }
 
-.menu-4 a {
+.menuaja a {
     padding: 0.3em 0;
     color: #212121;
     position: relative;
@@ -27,14 +27,14 @@
     text-decoration: none;
 }
 
-.menu-4 a:before,
-.menu-4 a:after {
+.menuaja a:before,
+.menuaja a:after {
     position: absolute;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
 
-.menu-4 a:before {
+.menuaja a:before {
     bottom: 100%;
     display: block;
     height: 3px;
@@ -43,7 +43,7 @@
     background-color: #fff;
 }
 
-.menu-4 a:after {
+.menuaja a:after {
     padding: 0.3em 0;
     position: absolute;
     bottom: 100%;
@@ -53,8 +53,8 @@
     white-space: nowrap;
 }
 
-.menu-4 li:hover a,
-.menu-4 .current a {
+.menuaja li:hover a,
+.menuaja .current a {
     transform: translateY(100%);
 }
 
@@ -70,23 +70,98 @@
     background-image: url(img/baground\ 1.png);
 }
 
-header{
+.top{
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
+    padding-top: 2em;
 }
 
-header p{
+.top p{
     font-size: larger;
 }
 
-.home{
-    display: flex;
+.head{
+    padding-bottom: 2em;
 }
 
-.home p{
-    font-size: 50px;
+
+
+
+.cons {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 h2 {
+    text-align: center;
+}
+
+.layanan.satu {
+    background-color: rgba(103, 103, 219, 0.233);
+}
+
+.layanan.dua {
+    background-color: rgba(223, 140, 140, 0.295);
+}
+
+.layanan {
+    width: 40%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.layanan h2 {
+    text-align: center;
+}
+
+.medsos {
+    font-size: 30px;
+    
+}
+
+.medsos img {
+    padding-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+}
+    
+.feedback {
+    text-align: center;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    margin-top: 5%;
+    width: 400px;
+    padding: 10px;
+    
+    
+}
+
+.form-group input {
     width: 60%;
-    padding-left: 2em;
-    padding-top: 2em;
+    height: 40px;
+}
+
+.siap li a{
+    color: black;
+    text-decoration: none;
+}
+.siap li a:hover{
+    color: white;
+}
+
+.siap li{
+    padding-bottom: 1em;
 }

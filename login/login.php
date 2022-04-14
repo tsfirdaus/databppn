@@ -18,8 +18,13 @@ if (isset($_POST["login"])){
         $_SESSION["login"] = true;
         header('location: ../index.php');
         exit;
+      }else{
+        echo "<script>
+        alert('Username/Password salah!');
+        document.location.href='login.php';
+    </script>";
       }
-      
+
     }
 }
 
@@ -44,7 +49,12 @@ if (isset($_POST["login"])){
     <h1>login admin</h1>
     <input type="text" name="username" placeholder="username">
     <input type="password" name="password" placeholder="password">
+    <div class="verify">
+    <a href="destroy.php">Logout</a>
     <input type="submit" name="login" value="Verify">
+    </div>
+    <p><i>Login untuk mengedit data!</i>
+    </p>
   </form>
 </body>
 

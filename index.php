@@ -22,17 +22,17 @@ session_start();
             <p><b>DATABPPN</b></p>
             <nav class="style-4">
                 <ul class="menu-4">
-                    <li class="current"><a href="#" data-hover="Home">Home</a></li>
+                    <li class="current"><a href="#home" data-hover="Home">Home</a></li>
                     <li><a href="ormasbppn/lihat.php" data-hover="ormasbppn">OrmasBppn</a></li>
-                    <li><a href="#" data-hover="ProKer">ProKer</a></li>
+                    <li><a href="#" data-hover="ProPer">ProPer</a></li>
                     <li><a href="contact.php" data-hover="Contact">Contact</a></li>
                     <li><a href="login/login.php" data-hover="AI"><img src="img/user.png" width='20px' alt="" srcset=""></a></li>
                 </ul>
             </nav>
         </header>
         <div id="home" class="home">
-            <p class="selamat">Selamat Datang! <br> di <b>DATABPPN</b> <br> </p>
-            <img  src="img/Frame 3 (2).png" alt="">
+            <p class="selamat">Selamat Datang!<br>di <b>DATABPPN</b> <br> </p>
+            <img  src="img/Frame 3 (2) (1).png" alt="">
         </div>
     </div>
 </body>

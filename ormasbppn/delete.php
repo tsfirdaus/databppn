@@ -1,5 +1,17 @@
 <?php 
     require '../config.php';
+
+    
+    session_start();
+    
+    if (!isset($_SESSION["login"])) {
+        echo "<script>
+        alert('Anda bukan admin!');
+        document.location.href='../login/login.php';
+    </script>";
+        exit;
+    }
+
     function hapus($id){
         global $conn;
         mysqli_query($conn,"DELETE FROM ormasbppn WHERE id = $id");

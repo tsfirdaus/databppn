@@ -8,7 +8,7 @@
         echo "<script>
         alert('Anda bukan admin!');
         document.location.href='../login/login.php';
-    </script>";
+    </script >";
         exit;
     }
 

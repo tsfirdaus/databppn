@@ -20,7 +20,7 @@ if (isset($_POST["login"])){
         exit;
       }else{
         echo "<script>
-        alert('Username/Password salah!');
+        swal.fire('Username/Password salah!');
         document.location.href='login.php';
     </script>";
       }

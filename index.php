@@ -24,7 +24,7 @@ session_start();
                 <ul class="menu-4">
                     <li class="current"><a href="#home" data-hover="Home">Home</a></li>
                     <li><a href="ormasbppn/lihat.php" data-hover="ormasbppn">OrmasBppn</a></li>
-                    <li><a href="#" data-hover="ProPer">ProPer</a></li>
+                    <li><a href="proper/ang2021/lihat.php" data-hover="ProPer">ProPer</a></li>
                     <li><a href="contact.php" data-hover="Contact">Contact</a></li>
                     <li><a href="login/login.php" data-hover="AI"><img src="img/user.png" width='20px' alt="" srcset=""></a></li>
                 </ul>

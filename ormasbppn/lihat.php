@@ -22,14 +22,19 @@
             <nav class="style-4">
                 <ul class="menu-4">
                     <li><a href="../index.php" data-hover="Home">Home</a></li>
-                    <li class="current"><a href="#" data-hover="Ormasbppn">Ormasbppn</a></li>
-                    <li><a href="#" data-hover="ProPer">ProPer</a></li>
-                    <li><a href="create.php" data-hover="Tambahkan">Tambahkan</a></li>
+                    <li class="current"><a href="#ormas" data-hover="Ormasbppn">Ormasbppn</a></li>
+                    <li><a href="../proper/ang2021/lihat.php" data-hover="ProPer">ProPer</a></li>
+                    <li><a href="../contact.php" data-hover="Contact">Contact</a></li>
+                    <li><a href="../login/login.php" data-hover="AI"><img src="../img/user.png" width='20px' alt="" srcset=""></a></li>
                 </ul>
             </nav>
         </header>
     </div>
-    <h2>DAFTAR ORGANISASI KEMASYARAKATAN YANG TERDAFTAR DI <br> BADAN KESBANGPOL BALIKPAPAN</h2>
+    <h2 id="ormas">DAFTAR ORGANISASI KEMASYARAKATAN YANG TERDAFTAR DI <br> BADAN KESBANGPOL BALIKPAPAN</h2>
+    <div class="create">
+    <a href="create.php" id="rotate"><img width="34px" src="../img/plus.png" alt=""></a>
+    <p>Tambah Data</p>
+</div>
     <table class="table" align="center">
         <tr>
             <th>No</th>

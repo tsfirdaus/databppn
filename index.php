@@ -20,8 +20,8 @@ session_start();
     <div class="head">
         <header>
             <p><b>DATABPPN</b></p>
-            <nav class="style-4">
-                <ul class="menu-4">
+            <nav class="style">
+                <ul class="menu">
                     <li class="current"><a href="#home" data-hover="Home">Home</a></li>
                     <li><a href="ormasbppn/lihat.php" data-hover="ormasbppn">OrmasBppn</a></li>
                     <li><a href="proper/ang2021/lihat.php" data-hover="ProPer">ProPer</a></li>

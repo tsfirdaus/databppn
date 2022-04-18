@@ -57,14 +57,13 @@
     <div class="head">
         <header>
             <p><b>DATABPPN</b></p>
-            <nav class="style-4">
-                <ul class="menu-4">
+            <nav class="style">
+                <ul class="menu">
                     <li><a href="index.php" data-hover="Home">Home</a></li>
                     <li><a href="ormasbppn/lihat.php" data-hover="ormasbppn">OrmasBppn</a></li>
                     <li><a href="proper/ang2021/lihat.php" data-hover="Proper">ProPer</a></li>
                     <li class="current"><a href="contact.php" data-hover="Contact">Contact</a></li>
-                    <li><a href="login/login.php" data-hover="AI"><img src="img/user.png" width='20px' alt=""
-                                srcset=""></a></li>
+                    <li><a href="login/login.php" data-hover="AI"><img src="img/user.png" width='20px' alt="" srcset=""></a></li>
                 </ul>
             </nav>
         </header>

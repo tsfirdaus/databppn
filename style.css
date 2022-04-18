@@ -1,25 +1,24 @@
 /* Navbar */
-
-.menuk-4 {
+.menu {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.menuk-4 * {
+.menu * {
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
 
-.menuk-4 li {
+.menu li {
     display: inline-block;
     list-style: outside none none;
     margin: 0 1.5em;
     overflow: hidden;
 }
 
-.menuk-4 a {
+.menu a {
     padding: 0.3em 0;
     color: #212121;
     position: relative;
@@ -29,14 +28,14 @@
     text-decoration: none;
 }
 
-.menuk-4 a:before,
-.menuk-4 a:after {
+.menu a:before,
+.menu a:after {
     position: absolute;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
 
-.menuk-4 a:before {
+.menu a:before {
     bottom: 100%;
     display: block;
     height: 3px;
@@ -45,7 +44,7 @@
     background-color: #fff;
 }
 
-.menuk-4 a:after {
+.menu a:after {
     padding: 0.3em 0;
     position: absolute;
     bottom: 100%;
@@ -55,10 +54,70 @@
     white-space: nowrap;
 }
 
-.menuk-4 li:hover a,
-.menuk-4 .current a {
+.menu li:hover a,
+.menu .current a {
     transform: translateY(100%);
 }
+
+/* .menu {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+}
+
+.menu a {
+    padding: 0.3em 0;
+    color: #212121;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.menu a:before,
+.menu a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.menu a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #fff;
+}
+
+.menu a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #212121;
+    white-space: nowrap;
+}
+
+.menu li:hover a,
+.menu .current a {
+    transform: translateY(100%);
+} */
 
 .head{
     background-image: url(img/baground\ 1.png);
@@ -82,9 +141,7 @@
     box-sizing: border-box;
 }
 
-.head{
-    background-image: url(img/baground\ 1.png);
-}
+
 
 header{
     display: flex;
@@ -222,7 +279,7 @@ h1 h2 {
 }
 
 .btn:hover{
-    background: rgb(108, 0, 108);
+    background: rgb(128, 0, 128);
 }
 
 
